@@ -1,4 +1,59 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+    url('../fonts/icomoon.woff?tomleg') format('woff'),
+    url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
 .w {
     width: 1200px;
     margin: 0 auto;
 }
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+.main_color {
+    color: #c81623;
+}
+.shortcut {
+    height: 30px;
+    background-color: #F1F1F1;
+    line-height: 30px;
+}
+
+.shortcut_left_wrapper li {
+    float: left;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.shortcut_right_wrapper li {
+    float: left;
+    font-size: 12px;
+}
+
+.shortcut_right_wrapper li:nth-child(2n) {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 9px 15px;
+}
+
+.shortcut_right_wrapper .arrow::after{
+    content: '\e91e';
+    font-size: 5px;
+    font-family: 'icomoon', serif;
+    margin-left: 5px;
+    vertical-align: bottom;
+}
+
