@@ -1,0 +1,198 @@
+
+.nav {
+    border-bottom: 2px solid #B1191A;
+}
+
+.nav .dropdown {
+    width: 209px;
+    height: 45px;
+}
+
+.nav .dropdown .dt {
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+    background-color: #B1191A;
+    color: #fff;
+    font-size: 16px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.nav .dropdown .dd {
+    position: relative;
+    width: 100%;
+    height: 465px;
+    margin-top: 2px;
+    background-color: #c81623;
+
+}
+
+.nav .dropdown .dd li {
+    height: 31px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 31px;
+    padding-left: 10px;
+    margin-left: 2px;
+}
+
+.nav .dropdown .arrow::after {
+    position: absolute;
+    right: 11px;
+    content: '\e920';
+    font-size: 5px;
+    font-family: 'icomoon', serif;
+    vertical-align: bottom;
+}
+
+.nav .dropdown .dd li:hover {
+    color: #c81623;
+    background-color: #fff;
+}
+
+.navitems {
+    height: 45px;
+}
+
+.nav .navitems a {
+    float: left;
+    padding: 0 25px;
+    font-size: 16px;
+    line-height: 45px;
+}
+
+.main {
+    height: 455px;
+    margin-left: 219px;
+    margin-top: 10px;
+}
+
+.main .focus {
+    float: left;
+    height: 100%;
+    width: 721px;
+}
+
+.main .newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+.main .news {
+    width: 100%;
+    height: 375px;
+    border: 1px solid #EDEDED;
+}
+
+.main .title {
+    height: 34px;
+    line-height: 34px;
+    border-bottom: 1px dotted #EDEDED;
+    padding: 0 16px;
+}
+
+.main .title h4 {
+    float: left;
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;
+}
+
+.main .title a {
+    float: right;
+    font-size: 12px;
+}
+
+.main .title a::after {
+    content: '\e920';
+    font-family: 'icomoon', serif;
+    vertical-align: bottom;
+    margin-left: 3px;
+}
+
+.main .newslist {
+    height: 120px;
+    padding: 0 16px;
+}
+
+.main .newslist li {
+    margin-top: 12px;
+    line-height: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main .iconlist {
+    height: 207px;
+}
+
+.main .iconlist li {
+    float: left;
+    height: 69px;
+    width: 62px;
+    text-align: center;
+    border-top: 1px solid #EDEDED;
+    border-right: 1px solid #EDEDED;;
+}
+
+.main .iconlist li:nth-child(4n) {
+    border-right: none;
+}
+
+.main .iconlist a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.main .iconlist .icon {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background: url("../images/icons.png") no-repeat -17px -16px;
+}
+
+.main .pic img {
+    width: 100%;
+    height: 75px;
+    margin-top: 5px;
+}
+.recommend_wrapper {
+    height: 163px;
+    margin-top: 11px;
+}
+.recommend_icon {
+    float: left;
+    width: 205px;
+    height: 100%;
+    background: #5C5251 url("../images/recom.png") no-repeat center;
+}
+
+.recommend {
+    float: right;
+    width: 995px;
+    height: 100%;
+    background-color: #EBEBEB;
+}
+
+.recommend ul {
+    position: absolute;
+}
+
+.recommend li {
+    float: left;
+}
+
+.recommend li:nth-child(-n+3)::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 143px;
+    margin-top: 10px;
+    background-color: #DDDDDD;
+}
