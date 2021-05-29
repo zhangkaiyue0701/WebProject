@@ -1,0 +1,46 @@
+.sk {
+    position: absolute;
+    top: 40px;
+    left: 185px;
+    height: 32px;
+    width: 61px;
+    border-left: 1px solid #C81523;
+    padding-left: 14px;
+    line-height: 32px;
+}
+.nav {
+    height: 30px;
+    line-height: 16px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #B1191A;
+}
+.sk_list {
+    float: left;
+}
+.sk_list a {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 700;
+    padding: 0 28px;
+}
+
+.nav_items li {
+    float: left;
+}
+
+.nav_items li a{
+    font-size: 14px;
+    padding: 0 28px;
+}
+
+.nav_items li:last-child a::after {
+    content: '\e91e';
+    font-family: 'icomoon', serif;
+    vertical-align: bottom;
+    margin-left: 3px;
+}
+
+.item {
+    width: 290px;
+    height: 460px;
+}
