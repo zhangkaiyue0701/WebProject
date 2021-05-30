@@ -8,15 +8,18 @@
     padding-left: 14px;
     line-height: 32px;
 }
+
 .nav {
     height: 30px;
     line-height: 16px;
     padding-bottom: 14px;
     border-bottom: 2px solid #B1191A;
 }
+
 .sk_list {
     float: left;
 }
+
 .sk_list a {
     font-size: 16px;
     color: #000000;
@@ -28,7 +31,7 @@
     float: left;
 }
 
-.nav_items li a{
+.nav_items li a {
     font-size: 14px;
     padding: 0 28px;
 }
@@ -40,7 +43,99 @@
     margin-left: 3px;
 }
 
+.dic_pic {
+    margin-bottom: 25px;
+}
+
+.list ul {
+    width: 1212px;
+}
+
+.list li {
+    float: left;
+}
+
 .item {
     width: 290px;
     height: 460px;
+    border: 1px solid transparent;
+    margin-right: 12px;
+}
+
+.item:hover {
+    border: 1px solid #E12228;
+}
+
+.item h5 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0 13px;
+}
+
+.price {
+    margin-top: 15px;
+}
+
+.price .now_price {
+    font-size: 18px;
+    color: #E60012;
+    margin-left: 12px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.price .now_price::before {
+    content: '￥';
+    font-size: 14px;
+    color: #E60012;
+}
+
+.price .old_price {
+    margin-left: 5px;
+    color: #A4A4A4;
+    font-size: 14px;
+}
+
+.progress {
+    margin-top: 12px;
+    line-height: 14px;
+}
+
+.progress span {
+    float: left;
+    font-size: 14px;
+    color: #666;
+}
+
+.progress .sold {
+    margin-left: 13px;
+}
+
+.progress .progress_bar {
+    float: left;
+    width: 132px;
+    height: 12px;
+    border: 1px solid #E12228;
+    border-radius: 6px;
+    margin: 0 12px;
+}
+
+.progress .progress_bar .current_progress {
+    width: 100px;
+    height: 10px;
+    margin-right: 1px;
+    background-color: #E12228;
+    border-radius: 6px 0 0 6px;
+}
+
+.item button {
+    margin-top: 14px;
+    width: 288px;
+    height: 50px;
+    background-color: #B1191A;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
 }
