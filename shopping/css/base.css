@@ -45,6 +45,16 @@ input {
     border: 0;
     outline: none;
 }
+/*去掉输入框type为number时的上下箭头*/
+/*谷歌*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+/*火狐*/
+input[type="number"] {
+    -moz-appearance: textfield;
+}
 
 body {
     /* CSS3 抗锯齿形 让文字显示的更加清晰 */

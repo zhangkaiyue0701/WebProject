@@ -1,0 +1,153 @@
+.header {
+    height: 84px;
+    border-bottom: 2px solid #B1191A;
+    padding-top: 16px;
+}
+
+.header a {
+    display: block;
+    width: 172px;
+    height: 61px;
+    background: url("../images/logo.png") no-repeat;
+    font-size: 0;
+}
+
+.register_area {
+    height: 520px;
+    border: 1px solid #DFDFDF;
+    margin-top: 21px;
+}
+
+.register_area .title {
+    height: 41px;
+    line-height: 41px;
+    background-color: #eee;
+    padding: 0 10px;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.register_area .title h3 {
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+}
+
+.register_area .title span {
+    float: right;
+    font-size: 14px;
+}
+
+.register_area .title span a {
+    color: #C81623;
+}
+
+.register_form {
+    width: 600px;
+    margin: 50px auto 0;
+}
+
+.register_form li {
+    margin-bottom: 20px;
+}
+
+.register_form label {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+    font-size: 14px;
+    color: #4D4D4D;
+}
+
+.register_form input {
+    display: inline-block;
+    height: 36px;
+    width: 240px;
+    border: 1px solid #999;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.register_form span {
+    color: #DF3033;
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 10px;
+}
+
+.register_form .hint_icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/error.png") no-repeat;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.register_form .safe {
+    color: #B3B3B3;
+    margin-left: 160px;
+    margin-top: -10px;
+}
+
+.register_form .safe em {
+    padding: 0 12px;
+    color: white;
+    margin-left: 2px;
+}
+
+.register_form .weak {
+    background-color: #DE1111;
+}
+
+.register_form .normal {
+    background-color: #40B83F;
+}
+
+.register_form .strong {
+    background-color: #F79100;
+}
+
+.register_form .agree {
+    padding-top: 22px;
+    margin-left: 88px;
+}
+.register_form .agree input {
+    float: left;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 12px;
+}
+
+.register_form .agree label {
+    float: left;
+    width: auto;
+    line-height: 16px;
+}
+
+.register_form .agree label a {
+    color: #1BA1E6;
+}
+
+.register_button {
+    margin-top: 50px;
+    margin-left: 95px;
+    width: 200px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    background-color: #C81623;
+}
+
+footer {
+    height: 120px;
+    background-color: #fff;
+    padding-top: 25px;
+}
+
+.mod_copyright {
+    margin-bottom: 36px;
+}
