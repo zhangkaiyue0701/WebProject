@@ -1,0 +1,177 @@
+@import "common.css";
+
+@baseFont: 50;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 15rem;
+  min-width: 320px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none
+}
+
+li {
+  list-style: none;
+}
+
+.nav_wrapper {
+  position: relative;
+}
+
+.nav_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: (180rem / @baseFont);
+}
+
+.nav_bg img {
+  width: 100%;
+  height: 100%;
+}
+
+.content_wrapper {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  height: (88rem / @baseFont);
+  margin: 0 (34rem / @baseFont);
+  align-items: center;
+}
+
+.content_wrapper > a > img {
+  width: (36rem / @baseFont);
+  height: (60rem / @baseFont);
+}
+
+.content_wrapper_middle > a > img {
+  width: (390rem / @baseFont);
+  height: (76rem / @baseFont);
+}
+
+.search_wrapper {
+  position: relative;
+  z-index: 100;
+  height: (92rem / @baseFont);
+  padding: 0 (24rem / @baseFont);
+
+  a {
+    position: relative;
+    display: block;
+  }
+
+  .search_icon {
+    position: absolute;
+    top: (28rem / @baseFont);
+    left: (20rem / @baseFont);
+    width: (36rem / @baseFont);
+    height: (36rem / @baseFont);
+    background: url("../images/search.png") no-repeat;
+    background-size: (36rem / @baseFont), auto;
+  }
+
+  form {
+    display: flex;
+    height: (92rem / @baseFont);
+    line-height: (92rem / @baseFont);
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  input {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: (64rem / @baseFont);
+    line-height: (64rem / @baseFont);
+    border: none;
+    font-size: (36rem / @baseFont);
+    border-radius: (32rem / @baseFont);
+    padding-left: (65rem / @baseFont);
+    padding-right: (20rem / @baseFont);
+    color: #666;
+    outline: none;
+  }
+
+  input::placeholder {
+    font-size: (30rem / @baseFont);
+    color: #999;
+  }
+}
+
+.banner_wrapper {
+  width: 100%;
+  height: (229rem / @baseFont);
+  background: url(../images/bg2.png) no-repeat;
+  background-size: (750rem / @baseFont) auto;
+  padding: 0 (24rem / @baseFont);
+
+  .banner {
+    position: relative;
+    height: 100%;
+    border-radius: (20rem / @baseFont);
+    overflow: hidden;
+  }
+
+  img {
+    position: absolute;
+    bottom: 0;
+    width: (750rem / @baseFont);
+    height: (368rem / @baseFont);
+  }
+
+  .banner_dot {
+    position: absolute;
+    bottom: (12rem / @baseFont);
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+
+    ul {
+      display: inline-block;
+      height: (8rem / @baseFont);
+    }
+
+    li {
+      float: left;
+      height: (8rem / @baseFont);
+      width: (8rem / @baseFont);
+      background-color: rgba(0,0,0,0.3);
+      border-radius: (4rem / @baseFont);
+      margin: 0 (5rem / @baseFont);
+    }
+
+    .current {
+      width: (18rem / @baseFont);
+      background-color: #fff;
+    }
+  }
+}
+
+.product_wrapper {
+  display: flex;
+a {
+  flex:1;
+}
+  img {
+    width: 100%;
+    height: (200rem / @baseFont);
+  }
+}
