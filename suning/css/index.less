@@ -175,3 +175,34 @@ a {
     height: (200rem / @baseFont);
   }
 }
+
+.nav_middle_wrapper {
+  width: 100%;
+  padding-bottom: (24rem / @baseFont);
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    flex: 20%;
+  }
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: (24rem / @baseFont);
+  }
+
+  img {
+    width: (84rem / @baseFont);
+    height: (84rem / @baseFont);
+  }
+
+  p {
+    font-size: .44rem;
+    color: #666;
+    margin-top: (5rem / @baseFont);
+  }
+}
