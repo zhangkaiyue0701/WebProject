@@ -8,10 +8,15 @@ window.addEventListener('load', function () {
     bannerBox.addEventListener('mouseenter', function () {
         arrowLeft.style.display = 'block';
         arrowRight.style.display = 'block';
+        clearInterval(timer);
+        timer = null;
     })
     bannerBox.addEventListener('mouseleave', function () {
         arrowLeft.style.display = 'none';
         arrowRight.style.display = 'none';
+        timer = setInterval(function () {
+            arrowRight.click();
+        }, 2000)
     })
     // 自动生成小圈圈
     let imageCount = imageList.childElementCount;
@@ -47,10 +52,9 @@ window.addEventListener('load', function () {
         let nextIndex = index + 1;
         clickEvent(nextIndex)
     })
-    setInterval(function () {
-        let nextIndex = index + 1;
-        clickEvent(nextIndex)
-    }, 5000)
+    let timer = setInterval(function () {
+        arrowRight.click();
+    }, 2000)
 
     function clickEvent(nextIndex) {
         for (let i = 0; i < imageCount; i++) {
