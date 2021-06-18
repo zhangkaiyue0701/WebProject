@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .preview_img {
+            position: relative;
+            float: left;
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+
+        .preview {
+            width: 400px;
+            height: 300px;
+            vertical-align: middle;
+        }
+
+        .mask {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            background-color: rgba(255, 0, 255, .2);
+            cursor: move;
+        }
+
+        .scale_img {
+            display: none;
+            float: left;
+            margin-top: 100px;
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+            background: url("images/gege.JPG") no-repeat;
+            background-size: 1000px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="preview_img">
+    <img src="images/gege.JPG" alt="" class="preview">
+    <div class="mask"></div>
+
+</div>
+<div class="scale_img"></div>
+<script>
+    const box = document.querySelector('.preview_img');
+    const image = document.querySelector('.preview');
+    const mask = document.querySelector('.mask');
+    const bigImage = document.querySelector('.scale_img');
+    box.addEventListener('mouseenter', function () {
+        console.log('enter')
+        mask.style.display = 'block';
+        bigImage.style.display = 'block';
+        document.addEventListener('mousemove', function (e) {
+            let left = e.pageX - box.offsetLeft - mask.offsetWidth /2;
+            let right = e.pageY - box.offsetTop - mask.offsetHeight /2;
+            if (left < 0) {
+                left = 0
+            }
+            if (left > (image.offsetWidth - mask.offsetWidth)) {
+                left = image.offsetWidth - mask.offsetWidth;
+            }
+            if (right < 0) {
+                right = 0
+            }
+            if (right > image.offsetHeight - mask.offsetHeight) {
+                right = image.offsetHeight - mask.offsetHeight;
+            }
+            mask.style.left = left + 'px';
+            mask.style.top = right + 'px';
+            bigImage.style.backgroundPositionX = '-' + left * 2.5 + 'px';
+            bigImage.style.backgroundPositionY = '-' + right * 2.5 + 'px';
+        })
+    })
+    box.addEventListener('mouseleave', function () {
+        console.log('leave')
+
+        mask.style.display = 'none';
+        bigImage.style.display = 'none';
+    })
+</script>
+</body>
+</html>
