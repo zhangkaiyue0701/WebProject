@@ -5,9 +5,127 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="animation.js"></script>
+    <script src="banner.js"></script>
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        img {
+            width: 400px;
+            vertical-align: top;
+        }
+        a {
+            text-decoration: none;
+        }
+        .banner-box {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            margin: 200px auto;
+            overflow: hidden;
+        }
+
+        .image-list {
+            position: absolute;
+            width: 700%;
+        }
+        
+        .image-list li {
+            float: left;
+        }
+
+        .arrow {
+            position: absolute;
+            display: none;
+            width: 25px;
+            height: 30px;
+            background-color: rgba(255,255,255,.3);
+            color: #ccc;
+            font-size: 18px;
+        }
+
+        .arrow:hover {
+            color: #fff;
+        }
+
+        .left {
+            top: 138px;
+            left: 0;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding-left: 5px;
+        }
+
+        .right {
+            top: 138px;
+            right: 0;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            padding-left: 9px;
+        }
+        .dot-box {
+            position: absolute;
+            bottom: 5px;
+            width: 100%;
+            text-align: center;
+        }
+        .dot-list {
+            display: inline-block;
+            background-color: rgba(255,255,255,.3);
+            border-radius: 8px;
+            padding: 0 2px;
+        }
+        .dot-list li {
+            float: left;
+
+        }
+        .dot-list li a {
+            display: block;
+            width: 8px;
+            height: 8px;
+            border-radius: 4px;
+            background-color: #ccc;
+            margin: 4px;
+        }
+        .dot-list li .dot-current {
+            background-color: #fff;
+        }
+    </style>
 </head>
 <body>
-
+<div class="banner-box">
+    <ul class="image-list">
+        <li>
+            <img src="images/gege1.JPG" alt="">
+        </li>
+        <li>
+            <img src="images/gege2.JPG" alt="">
+        </li>
+        <li>
+            <img src="images/gege3.JPG" alt="">
+        </li>
+        <li>
+            <img src="images/gege4.JPG" alt="">
+        </li>
+        <li>
+            <img src="images/gege5.JPG" alt="">
+        </li>
+    </ul>
+    <a href="javascript:void(0)" class="arrow left">&lt;</a>
+    <a href="javascript:void(0)" class="arrow right">&gt;</a>
+    <div class="dot-box">
+        <ul class="dot-list">
+        </ul>
+    </div>
+</div>
 </body>
 </html>
