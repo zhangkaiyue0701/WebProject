@@ -4,6 +4,7 @@ window.addEventListener('load', function () {
     const arrowRight = document.querySelector('.right');
     const dotList = document.querySelector('.dot-list');
     const imageList = document.querySelector('.image-list');
+    let isActive = false;
     // 鼠标在图片上显示左右箭头
     bannerBox.addEventListener('mouseenter', function () {
         arrowLeft.style.display = 'block';
@@ -57,23 +58,27 @@ window.addEventListener('load', function () {
     }, 2000)
 
     function clickEvent(nextIndex) {
-        for (let i = 0; i < imageCount; i++) {
-            dotList.children[i].firstChild.className = '';
-        }
-        animation(imageList, nextIndex * (-400), function () {
-            if (nextIndex > imageCount) {
-                imageList.style.left = '-400px';
-            } else if (nextIndex < 1) {
-                imageList.style.left = -400 * imageCount + 'px'
+        if (isActive === false) {
+            isActive = true;
+            for (let i = 0; i < imageCount; i++) {
+                dotList.children[i].firstChild.className = '';
             }
-        });
-        if (nextIndex > imageCount) {
-            index = 1;
-        } else if (nextIndex < 1) {
-            index = imageCount;
-        } else {
-            index = nextIndex;
+            animation(imageList, nextIndex * (-400), function () {
+                if (nextIndex > imageCount) {
+                    imageList.style.left = '-400px';
+                } else if (nextIndex < 1) {
+                    imageList.style.left = -400 * imageCount + 'px'
+                }
+                isActive = false;
+            });
+            if (nextIndex > imageCount) {
+                index = 1;
+            } else if (nextIndex < 1) {
+                index = imageCount;
+            } else {
+                index = nextIndex;
+            }
+            dotList.children[index - 1].firstChild.className = 'dot-current'
         }
-        dotList.children[index - 1].firstChild.className = 'dot-current'
     }
 })
