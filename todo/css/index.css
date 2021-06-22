@@ -1,0 +1,92 @@
+
+body {
+    background-color: #eee;
+}
+.w {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 50px;
+    background-color: #333;
+    line-height: 50px;
+}
+
+.header h2 {
+    float: left;
+    font-size: 22px;
+    color: #DFDFDF;
+    font-weight: 700;
+}
+
+.header input {
+    float: right;
+    width: 350px;
+    height: 30px;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 10px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, .3);
+
+}
+
+.title {
+    height: 50px;
+    line-height: 50px;
+}
+
+.title h2 {
+    float: left;
+    font-size: 22px;
+    color: #333;
+    font-weight: 700;
+}
+
+.title p {
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.doing li,
+.done li {
+    height: 35px;
+    line-height: 35px;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 0 10px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+    margin-bottom: 10px;
+}
+
+input[type='checkbox'] {
+    float: left;
+    height: 20px;
+    width: 20px;
+    margin-top: 7px;
+    vertical-align: middle;
+}
+
+.doing li p,
+.done li p {
+    float: left;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.doing li a,
+.done li a{
+    float: right;
+    height: 20px;
+    width: 20px;
+    background: url("../images/delete.png") no-repeat;
+    background-size: 20px 20px;
+    margin-top: 7px;
+}
