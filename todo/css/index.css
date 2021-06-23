@@ -65,6 +65,10 @@ body {
     padding: 0 10px;
     box-shadow: 1px 1px 5px rgba(0,0,0,.2);
     margin-bottom: 10px;
+    border-left: 5px solid cornflowerblue;
+}
+.done li {
+    opacity: 0.4;
 }
 
 input[type='checkbox'] {
